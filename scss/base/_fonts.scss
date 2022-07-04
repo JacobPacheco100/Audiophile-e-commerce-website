@@ -2,17 +2,20 @@
 // font-family: 'Manrope', sans-serif;
 
 @mixin normal-text {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.8;
 }
 
 html {
-  font-size: 16px;
   @include normal-text;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   letter-spacing: 0.0806rem;
   font-weight: 600;
 }
@@ -27,9 +30,15 @@ h3 {
   letter-spacing: 0.0806rem;
 }
 
+@media (max-width: $tablet) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
 .nav-link {
   color: $white-text;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.1em;
   font-weight: 600;
   text-transform: uppercase;
@@ -40,9 +49,15 @@ h3 {
 }
 
 .spaced-text {
-  font-weight: 800;
+  font-weight: 500;
   font-size: 0.875rem;
   letter-spacing: 0.625rem;
+}
+
+.gap-text {
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.08rem;
 }
 
 // text groups
@@ -51,6 +66,24 @@ h3 {
   h1,
   h2,
   h3 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.text-btn-content {
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.btn-content {
+  p {
     margin-bottom: 2.5rem;
   }
 }

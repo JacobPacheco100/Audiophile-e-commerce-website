@@ -7,7 +7,7 @@ $orange: #d87d4a;
 
 // text exclusive
 $white-text: white;
-$dark-text: #303030;
+$dark-text: rgba(255, 255, 255, 0.528);
 
 // border-radius
 $bdrr: 0.5rem;
@@ -76,4 +76,13 @@ $desktop: 992px;
 @mixin margin-center {
   margin-left: auto;
   margin-right: auto;
+}
+
+// buttons
+
+button {
+  padding: 12px 32px;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
 }
