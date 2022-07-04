@@ -66,6 +66,12 @@ $desktop: 992px;
   flex-direction: column;
 }
 
+@mixin flex-y-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @mixin flex-col-bottom {
   @include flex-center;
   justify-content: flex-end;
@@ -78,11 +84,48 @@ $desktop: 992px;
   margin-right: auto;
 }
 
+// gap text
+
+@mixin gap-text {
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.08rem;
+}
+
 // buttons
 
 button {
+  @include gap-text;
+  font-size: 0.9rem;
   padding: 12px 32px;
   border: none;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.btn-orange {
+  background: $orange;
+  color: white;
+  &:hover {
+    background: lighten($color: $orange, $amount: 10);
+  }
+}
+
+.btn-black {
+  background: $dark;
+  color: white;
+  &:hover {
+    background: lighten($color: $dark, $amount: 20);
+    color: white;
+  }
+}
+
+.btn-outline {
+  border: 1px solid $dark;
+  background: transparent;
+  color: $dark;
+  &:hover {
+    background: $dark;
+    color: white;
+  }
 }

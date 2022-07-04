@@ -99,12 +99,20 @@ header {
   .item {
     height: 170px;
   }
+
+  .item:nth-last-of-type(2) {
+    margin: 60px 0;
+  }
 }
 
 @media (min-width: $tablet) {
   .product-line {
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
+
+    .item:nth-last-of-type(2) {
+      margin: 0;
+    }
   }
 }
 
@@ -139,16 +147,23 @@ header {
   }
   .box-2 {
     grid-area: box-2;
-    height: 320px;
+    height: 421px;
+    background-image: url(/assets/img/speaker-zx7.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .box-3 {
     grid-area: box-3;
-    background: $dark;
+    background-image: url(/assets/img/earphones-yx1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
     height: 320px;
   }
   .box-4 {
     grid-area: box-4;
-    height: 320px;
+    height: 200px;
   }
 }
 
@@ -175,6 +190,14 @@ header {
     .box-1 {
       height: 593px;
     }
+
+    .box-2 {
+      height: 320px;
+    }
+
+    .box-4 {
+      height: 320px;
+    }
   }
 }
 
@@ -197,12 +220,20 @@ header {
 
   .img {
     border-radius: $bdrr;
-    height: 200px;
-    background: rgb(166, 166, 166);
+    height: 320px;
+    background: url(../assets/img/about-img.jpeg);
+    background-size: cover;
+    background-position: center;
   }
 }
 
 // media
+
+@media (min-width: $tablet) {
+  .about .img {
+    height: 200px;
+  }
+}
 
 @media (min-width: $desktop) {
   .about {
