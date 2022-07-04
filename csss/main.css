@@ -562,12 +562,6 @@ header {
     margin-left: 50px;
   }
 }
-footer {
-  margin-top: 200px;
-  height: 364px;
-  background: #181818;
-}
-
 *,
 ul,
 a,
@@ -596,6 +590,117 @@ a,
 li {
   text-decoration: none;
   list-style: none;
+}
+
+footer {
+  margin-top: 200px;
+  padding-top: 50px;
+  min-height: 344px;
+  background: #181818;
+}
+footer .NAV,
+footer .NAV ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+footer .NAV ul {
+  margin-top: 40px;
+}
+footer .NAV ul a {
+  padding: 10px;
+  font-weight: 0.9rem;
+}
+@media (min-width: 480px) {
+  footer .NAV {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  footer .NAV ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  footer .NAV ul a {
+    padding: 0;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 768px) {
+  footer .NAV {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  footer .NAV ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+footer .grid {
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  color: rgba(255, 255, 255, 0.528);
+  font-weight: 300;
+}
+footer .grid div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+footer .grid div .social {
+  flex-direction: row;
+}
+footer .grid div .social a:nth-of-type(2) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 480px) {
+  footer .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  footer .grid .box1 {
+    grid-column: 1/span 2;
+  }
+  footer .grid div {
+    text-align: left;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 992px) {
+  footer .grid {
+    height: 260px;
+  }
+  footer .grid .box1 {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+  }
+  footer .grid .box2 {
+    grid-column: 1/span 1;
+    grid-row: 2/span 2;
+  }
+  footer .grid .box3 {
+    grid-column: 2/span 3;
+    grid-row: 1/span 3;
+  }
+  footer .grid .social-container {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
