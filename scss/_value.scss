@@ -1,0 +1,79 @@
+// main color
+$bg: #fafafa;
+$light: #f1f1f1;
+$dark: #181818;
+$gray: #303030;
+$orange: #d87d4a;
+
+// text exclusive
+$white-text: white;
+$dark-text: #303030;
+
+// border-radius
+$bdrr: 0.5rem;
+
+.item {
+  border-radius: $bdrr;
+  background: $light;
+}
+
+// breakpoints
+
+$tablet: 480px;
+$desktop: 992px;
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1110px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/// Flex Layout
+// below just for DRY!
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+// ^
+
+@mixin flex-inline {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-row {
+  @include flex-center;
+  flex-direction: row;
+}
+
+@mixin flex-col-center {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-col-left {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@mixin flex-col-bottom {
+  @include flex-center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+// margin
+
+@mixin margin-center {
+  margin-left: auto;
+  margin-right: auto;
+}

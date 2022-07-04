@@ -1,3 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&display=swap");
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
 
+.item {
+  border-radius: 0.5rem;
+  background: #f1f1f1;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1110px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+html {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.0806rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.125rem;
+  letter-spacing: 0.0806rem;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  color: #d87d4a;
+}
+
+.spaced-text {
+  font-weight: 800;
+  font-size: 0.875rem;
+  letter-spacing: 0.625rem;
+}
+
+*,
+ul,
+a,
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+i {
+  font-size: 25px;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  background: #181818;
+  width: 100%;
+}
+
+.nav-bar {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 89px;
+  border-bottom: 1px solid #303030;
+}
+
+.nav-bar div,
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+
+.nav-bar ul {
+  display: none;
+  padding-right: 40px;
+}
+.nav-bar ul a {
+  padding: 20px;
+}
+
+.nav-bar .logo {
+  padding-left: 15vw;
+}
+
+@media (min-width: 480px) {
+  .nav-bar .logo {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .nav-bar .logo {
+    padding-left: 0;
+  }
+  .nav-bar #menu-btn {
+    display: none;
+  }
+  .nav-bar ul {
+    display: flex;
+  }
+}
+header {
+  background: #181818;
+  height: 600px;
+}
+
+@media (min-width: 480px) {
+  header {
+    height: 700px;
+  }
+}
+.product-line {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+.product-line .item {
+  height: 170px;
+}
+
+@media (min-width: 480px) {
+  .product-line {
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .product-line {
+    grid-gap: 35px;
+  }
+}
+.product-grid {
+  margin-top: 150px;
+  display: grid;
+  width: 100%;
+  height: 1612px;
+  grid-gap: 20px;
+  grid-template-areas: "box-1" "box-1" "box-1" "box-2" "box-2" "box-3" "box-4";
+}
+.product-grid .box-1 {
+  grid-area: box-1;
+}
+.product-grid .box-2 {
+  grid-area: box-2;
+}
+.product-grid .box-3 {
+  grid-area: box-3;
+}
+.product-grid .box-4 {
+  grid-area: box-4;
+}
+
+@media (min-width: 480px) {
+  .product-grid {
+    grid-gap: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .product-grid {
+    grid-gap: 50px;
+    height: 1329px;
+    grid-template-areas: "box-1 box-1" "box-1 box-1" "box-1 box-1" "box-2 box-2" "box-2 box-2" "box-3 box-4" "box-3 box-4";
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
