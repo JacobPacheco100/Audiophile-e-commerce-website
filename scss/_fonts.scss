@@ -44,3 +44,13 @@ h3 {
   font-size: 0.875rem;
   letter-spacing: 0.625rem;
 }
+
+// text groups
+
+.text-content {
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 2.5rem;
+  }
+}

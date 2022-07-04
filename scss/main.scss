@@ -159,12 +159,14 @@ header {
 
   .box-1 {
     grid-area: box-1;
+    background: $orange;
   }
   .box-2 {
     grid-area: box-2;
   }
   .box-3 {
     grid-area: box-3;
+    background: $dark;
   }
   .box-4 {
     grid-area: box-4;
@@ -192,4 +194,59 @@ header {
       "box-3 box-4"
       "box-3 box-4";
   }
+}
+
+// about
+
+.about {
+  @include flex-col-center;
+  flex-direction: column-reverse;
+  margin-top: 120px;
+  width: 100%;
+
+  div {
+    width: 100%;
+  }
+
+  .text-content {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+
+  .img {
+    border-radius: $bdrr;
+    height: 200px;
+    background: rgb(166, 166, 166);
+  }
+}
+
+// media
+
+@media (min-width: $desktop) {
+  .about {
+    @include flex-row;
+    height: 600px;
+
+    div {
+      width: 50%;
+    }
+
+    .text-content {
+      margin-top: 0;
+      text-align: left;
+    }
+
+    .img {
+      height: 100%;
+      margin-left: 50px;
+    }
+  }
+}
+
+// footer
+
+footer {
+  margin-top: 200px;
+  height: 364px;
+  background: $dark;
 }
