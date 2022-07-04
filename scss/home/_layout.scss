@@ -64,7 +64,7 @@ nav {
 
 header {
   background-color: $dark;
-  background-image: url("/assets/img/image-hero-mobile.jpg");
+  background-image: url("../assets/img/image-hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: fit;
   background-position: 50% 100%;
@@ -81,7 +81,7 @@ header {
 
 @media (min-width: $desktop) {
   header {
-    background-image: url("/assets/img/image-hero.jpg");
+    background-image: url("../assets/img/image-hero.jpg");
     background-position: 100% 100%;
   }
 }
