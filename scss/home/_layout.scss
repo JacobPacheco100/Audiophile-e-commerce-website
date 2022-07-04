@@ -66,8 +66,8 @@ header {
   background-color: $dark;
   background-image: url("../assets/img/image-hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: fit;
-  background-position: 50% 100%;
+  background-size: 600px;
+  background-position: 50% -50%;
   height: 500px;
 }
 
@@ -76,13 +76,16 @@ header {
 @media (min-width: $tablet) {
   header {
     height: 600px;
+    background-size: cover;
+    background-position: 50% -70px;
   }
 }
 
 @media (min-width: $desktop) {
   header {
     background-image: url("../assets/img/image-hero.jpg");
-    background-position: 100% 100%;
+    background-size: contain;
+    background-position: 50% -55px;
   }
 }
 

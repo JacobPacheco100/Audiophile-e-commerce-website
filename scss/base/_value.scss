@@ -12,6 +12,10 @@ $dark-text: rgba(255, 255, 255, 0.528);
 // border-radius
 $bdrr: 0.5rem;
 
+// transition
+
+$trans1: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
 .item {
   border-radius: $bdrr;
   background: $light;
@@ -101,6 +105,7 @@ button {
   border: none;
   font-weight: 600;
   text-transform: uppercase;
+  transition: $trans1;
 }
 
 .btn-orange {

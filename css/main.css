@@ -58,6 +58,7 @@ button {
   border: none;
   font-weight: 600;
   text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-orange {
@@ -123,6 +124,7 @@ h3 {
   letter-spacing: 0.1em;
   font-weight: 600;
   text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .nav-link:hover {
   color: #d87d4a;
@@ -252,6 +254,7 @@ header .text-btn-content p {
   font-size: 0.85rem;
   font-weight: 600;
   color: rgb(91, 91, 91);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .product-line .item .item-content div i {
   font-weight: normal;
@@ -409,20 +412,23 @@ header {
   background-color: #181818;
   background-image: url("../assets/img/image-hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: fit;
-  background-position: 50% 100%;
+  background-size: 600px;
+  background-position: 50% -50%;
   height: 500px;
 }
 
 @media (min-width: 480px) {
   header {
     height: 600px;
+    background-size: cover;
+    background-position: 50% -70px;
   }
 }
 @media (min-width: 992px) {
   header {
     background-image: url("../assets/img/image-hero.jpg");
-    background-position: 100% 100%;
+    background-size: contain;
+    background-position: 50% -55px;
   }
 }
 .product-line {
@@ -666,8 +672,8 @@ footer .grid div .social {
   flex-direction: row;
 }
 footer .grid div .social a:nth-of-type(2) {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 @media (min-width: 480px) {
   footer .grid {
@@ -700,6 +706,9 @@ footer .grid div .social a:nth-of-type(2) {
   }
   footer .grid .social-container {
     justify-content: center;
+  }
+  footer .grid .social-container i {
+    font-size: 30px;
   }
 }
 

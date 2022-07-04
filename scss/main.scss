@@ -34,6 +34,8 @@ li {
   list-style: none;
 }
 
+//================================================ FOOTER ====================================================
+
 footer {
   margin-top: 200px;
   padding-top: 50px;
@@ -103,8 +105,8 @@ footer {
       .social {
         flex-direction: row;
         a:nth-of-type(2) {
-          padding-left: 10px;
-          padding-right: 10px;
+          padding-left: 12px;
+          padding-right: 12px;
         }
       }
     }
@@ -144,6 +146,9 @@ footer {
 
       .social-container {
         justify-content: center;
+        i {
+          font-size: 30px;
+        }
       }
     }
   }
