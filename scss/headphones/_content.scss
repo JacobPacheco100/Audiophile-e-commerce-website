@@ -1,0 +1,38 @@
+.headphones-body {
+  header {
+    @include flex-row;
+    @include flex-y-center;
+    color: white;
+    h1 {
+      font-size: 2rem;
+    }
+    @media (min-width: $tablet) {
+      h1 {
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  .product {
+    text-align: center;
+
+    .span-text-btn-content {
+      @include margin-center;
+      width: 85%;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: $desktop) {
+      text-align: left;
+      .span-text-btn-content {
+        margin: 0;
+        width: 443px;
+        padding-left: 20px;
+        align-self: center;
+      }
+    }
+  }
+  .hp2 {
+    flex-direction: row-reverse;
+  }
+}

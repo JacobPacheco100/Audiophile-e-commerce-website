@@ -84,6 +84,23 @@ h3 {
   }
 }
 
+.span-text-btn-content {
+  span {
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 2.5rem;
+  }
+}
+
 .btn-content {
   p,
   h1,

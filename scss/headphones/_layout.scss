@@ -1,0 +1,46 @@
+.headphones-body {
+  // heading
+  header {
+    height: 100px;
+    background: $dark;
+  }
+  @media (min-width: $tablet) {
+    header {
+      height: 255px;
+    }
+  }
+
+  // products display
+  .product {
+    margin-top: 64px;
+    margin-bottom: 120px;
+    height: 700px;
+    .img {
+      width: 100%;
+      &::after {
+        content: "";
+        display: block;
+        padding-bottom: 51%;
+        background: $test;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      @include flex-row;
+      align-items: flex-start;
+      height: auto;
+      .img {
+        width: 50%;
+        &::after {
+          padding-bottom: 100%;
+        }
+      }
+    }
+  }
+
+  // product line | component
+  // inserted
+
+  // about | component
+  // inserted
+}

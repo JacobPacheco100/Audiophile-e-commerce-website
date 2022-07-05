@@ -1,8 +1,11 @@
 @import "base/root";
 @import "base/value";
 @import "base/fonts";
-@import "home/content";
 @import "home/layout";
+@import "home/content";
+// headphones
+@import "headphones/layout";
+@import "headphones/content";
 
 *,
 ul,
@@ -22,6 +25,7 @@ h6 {
 
 body {
   font-family: "Manrope", sans-serif;
+  background: $bg;
 }
 
 i {
@@ -32,6 +36,66 @@ a,
 li {
   text-decoration: none;
   list-style: none;
+}
+
+//================================================   NAV   ====================================================
+
+nav {
+  background: $dark;
+  width: 100%;
+
+  .nav-bar {
+    @include margin-center;
+    @include flex-row;
+    height: 89px;
+    border-bottom: 1px solid $gray;
+  }
+
+  .nav-bar div,
+  .nav-bar ul {
+    @include flex-inline;
+    align-items: center;
+  }
+
+  .nav-bar ul {
+    display: none;
+    padding-right: 40px;
+    a {
+      padding: 20px;
+    }
+  }
+
+  // media
+
+  .nav-bar {
+    .logo {
+      padding-left: 15vw;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    .nav-bar {
+      .logo {
+        padding-left: 30px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .nav-bar {
+      .logo {
+        padding-left: 0;
+      }
+
+      #menu-btn {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+      }
+    }
+  }
 }
 
 //================================================ FOOTER ====================================================
@@ -104,6 +168,13 @@ footer {
 
       .social {
         flex-direction: row;
+        i {
+          color: $light;
+          transition: $trans1;
+        }
+        a:hover i {
+          color: $orange;
+        }
         a:nth-of-type(2) {
           padding-left: 12px;
           padding-right: 12px;
@@ -150,6 +221,160 @@ footer {
           font-size: 30px;
         }
       }
+    }
+  }
+}
+
+.product-line {
+  // .item p | div [ span i
+
+  .item {
+    position: relative;
+    img {
+      width: 138px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      top: -50px;
+    }
+    .item-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      right: 50%;
+      @include flex-col-center;
+      text-transform: uppercase;
+
+      p {
+        color: $dark;
+        font-size: 1.2rem;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        padding-bottom: 8px;
+      }
+
+      div {
+        @include flex-inline;
+        position: relative;
+        span {
+          font-size: 0.85rem;
+          font-weight: 600;
+          color: rgb(91, 91, 91);
+          transition: $trans1;
+        }
+        i {
+          font-weight: normal;
+          color: $orange;
+          position: absolute;
+          right: -30px;
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover div span {
+      color: $orange;
+    }
+  }
+}
+
+.product-line {
+  @include margin-center;
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-gap: 10px;
+
+  .item {
+    height: 170px;
+  }
+
+  .item:nth-last-of-type(2) {
+    margin: 60px 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  .product-line {
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .item:nth-last-of-type(2) {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .product-line {
+    grid-gap: 35px;
+  }
+}
+
+// about
+
+.about {
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    span {
+      color: $orange;
+    }
+  }
+}
+.about {
+  @include flex-col-center;
+  flex-direction: column-reverse;
+  margin-top: 120px;
+  width: 100%;
+
+  div {
+    width: 100%;
+  }
+
+  .text-content {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+
+  .img {
+    border-radius: $bdrr;
+    height: 320px;
+    background: url(../assets/img/about-img.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: $tablet) {
+  .about .img {
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .about {
+    @include flex-row;
+    height: 600px;
+
+    div {
+      width: 50%;
+    }
+
+    .text-content {
+      margin-top: 0;
+      text-align: left;
+      h2 {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    .img {
+      height: 100%;
+      margin-left: 50px;
     }
   }
 }
