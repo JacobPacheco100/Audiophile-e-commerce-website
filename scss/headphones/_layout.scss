@@ -13,7 +13,7 @@
   // products display
   .product {
     margin-top: 64px;
-    margin-bottom: 120px;
+    margin-bottom: -80px;
     height: 700px;
     .img {
       width: 100%;
@@ -25,10 +25,15 @@
       }
     }
 
+    @media (min-width: $tablet) {
+      margin-bottom: 0px;
+    }
+
     @media (min-width: $desktop) {
       @include flex-row;
       align-items: flex-start;
       height: auto;
+      margin-bottom: 120px;
       .img {
         width: 50%;
         &::after {

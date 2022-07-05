@@ -397,7 +397,7 @@ h3 {
 }
 .headphones-body .product {
   margin-top: 64px;
-  margin-bottom: 120px;
+  margin-bottom: -80px;
   height: 700px;
 }
 .headphones-body .product .img {
@@ -409,6 +409,11 @@ h3 {
   padding-bottom: 51%;
   background: rgb(208, 208, 208);
 }
+@media (min-width: 480px) {
+  .headphones-body .product {
+    margin-bottom: 0px;
+  }
+}
 @media (min-width: 992px) {
   .headphones-body .product {
     display: flex;
@@ -417,6 +422,7 @@ h3 {
     flex-direction: row;
     align-items: flex-start;
     height: auto;
+    margin-bottom: 120px;
   }
   .headphones-body .product .img {
     width: 50%;
