@@ -386,36 +386,50 @@ h3 {
   }
 }
 
-.headphones-body header {
+.headphones-body header,
+.speakers-body header,
+.earphones-body header {
   height: 100px;
   background: #181818;
 }
 @media (min-width: 480px) {
-  .headphones-body header {
+  .headphones-body header,
+.speakers-body header,
+.earphones-body header {
     height: 255px;
   }
 }
-.headphones-body .product {
+.headphones-body .product,
+.speakers-body .product,
+.earphones-body .product {
   margin-top: 64px;
   margin-bottom: -80px;
   height: 700px;
 }
-.headphones-body .product .img {
+.headphones-body .product .img,
+.speakers-body .product .img,
+.earphones-body .product .img {
   width: 100%;
 }
-.headphones-body .product .img::after {
+.headphones-body .product .img::after,
+.speakers-body .product .img::after,
+.earphones-body .product .img::after {
   content: "";
   display: block;
   padding-bottom: 51%;
   background: rgb(208, 208, 208);
 }
 @media (min-width: 480px) {
-  .headphones-body .product {
+  .headphones-body .product,
+.speakers-body .product,
+.earphones-body .product {
     margin-bottom: 0px;
   }
 }
 @media (min-width: 992px) {
-  .headphones-body .product {
+  .headphones-body .product,
+.speakers-body .product,
+.earphones-body .product {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -424,15 +438,21 @@ h3 {
     height: auto;
     margin-bottom: 120px;
   }
-  .headphones-body .product .img {
+  .headphones-body .product .img,
+.speakers-body .product .img,
+.earphones-body .product .img {
     width: 50%;
   }
-  .headphones-body .product .img::after {
+  .headphones-body .product .img::after,
+.speakers-body .product .img::after,
+.earphones-body .product .img::after {
     padding-bottom: 100%;
   }
 }
 
-.headphones-body header {
+.headphones-body header,
+.speakers-body header,
+.earphones-body header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -442,39 +462,55 @@ h3 {
   justify-content: center;
   color: white;
 }
-.headphones-body header h1 {
+.headphones-body header h1,
+.speakers-body header h1,
+.earphones-body header h1 {
   font-size: 2rem;
 }
 @media (min-width: 480px) {
-  .headphones-body header h1 {
+  .headphones-body header h1,
+.speakers-body header h1,
+.earphones-body header h1 {
     font-size: 2.6rem;
   }
 }
-.headphones-body .product {
+.headphones-body .product,
+.speakers-body .product,
+.earphones-body .product {
   text-align: center;
 }
-.headphones-body .product .span-text-btn-content {
+.headphones-body .product .span-text-btn-content,
+.speakers-body .product .span-text-btn-content,
+.earphones-body .product .span-text-btn-content {
   margin-left: auto;
   margin-right: auto;
   width: 85%;
   margin-top: 2rem;
 }
 @media (min-width: 992px) {
-  .headphones-body .product {
+  .headphones-body .product,
+.speakers-body .product,
+.earphones-body .product {
     text-align: left;
   }
-  .headphones-body .product .span-text-btn-content {
+  .headphones-body .product .span-text-btn-content,
+.speakers-body .product .span-text-btn-content,
+.earphones-body .product .span-text-btn-content {
     margin: 0;
     width: 443px;
     padding-left: 20px;
     align-self: center;
   }
-  .headphones-body .product .span-text-btn-content span {
+  .headphones-body .product .span-text-btn-content span,
+.speakers-body .product .span-text-btn-content span,
+.earphones-body .product .span-text-btn-content span {
     color: #d87d4a;
     font-weight: 300;
   }
 }
-.headphones-body .hp2 {
+.headphones-body .hp2,
+.speakers-body .hp2,
+.earphones-body .hp2 {
   flex-direction: row-reverse;
 }
 

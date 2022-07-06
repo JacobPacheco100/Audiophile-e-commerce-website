@@ -1,4 +1,6 @@
-.headphones-body {
+.headphones-body,
+.speakers-body,
+.earphones-body {
   header {
     @include flex-row;
     @include flex-y-center;
