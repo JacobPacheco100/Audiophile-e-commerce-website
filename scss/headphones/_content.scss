@@ -1,6 +1,7 @@
 .headphones-body,
 .speakers-body,
-.earphones-body {
+.earphones-body,
+.see-product-body {
   header {
     @include flex-row;
     @include flex-y-center;
@@ -35,6 +36,10 @@
         width: 443px;
         padding-left: 20px;
         align-self: center;
+        p {
+          font-weight: 300;
+          color: rgb(146, 146, 146);
+        }
       }
     }
   }

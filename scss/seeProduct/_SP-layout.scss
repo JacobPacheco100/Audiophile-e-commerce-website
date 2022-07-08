@@ -1,0 +1,125 @@
+.see-product-body {
+  .product {
+    margin-top: 56px;
+    .span-text-btn-content {
+      p {
+        margin-bottom: 32px;
+      }
+
+      strong {
+        margin-bottom: 32px;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      .btn-group {
+        .quantity {
+          width: 120px;
+          height: 44.25px;
+          background: $light;
+          margin-right: 1rem;
+        }
+        @media (max-width: 315px) {
+          @include flex-col-center;
+          .quantity,
+          button {
+            width: 100%;
+          }
+
+          .quantity {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    @media (min-width: $desktop) {
+      .img {
+        width: 45%;
+        &::after {
+          padding-bottom: 100%;
+        }
+      }
+      .span-text-btn-content {
+        h1 {
+          font-size: 3rem;
+        }
+        width: 480px;
+        padding-left: 0px;
+        align-self: center;
+      }
+    }
+  }
+
+  .go-back {
+    display: inline-block;
+    margin-top: 80px;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+    color: rgb(130, 130, 130);
+    font-weight: 300;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+// product info
+
+.product-info {
+  margin-top: 80px;
+  font-weight: 300;
+  color: $gray;
+
+  .features {
+    h2 {
+      font-weight: bold;
+    }
+    p:last-child {
+      margin-top: 30px;
+    }
+    margin-bottom: 100px;
+  }
+
+  .in-the-box {
+    h2 {
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    ul li {
+      span {
+        font-weight: bold;
+        color: $orange;
+        margin-right: 15px;
+      }
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: 480px) {
+    .in-the-box {
+      display: flex;
+      ul {
+        margin-left: 25%;
+      }
+    }
+  }
+  @media (min-width: $desktop) {
+    display: flex;
+    .features {
+      max-width: 57%;
+    }
+    .in-the-box {
+      display: block;
+      margin-left: 15%;
+      ul {
+        margin-left: 0;
+      }
+    }
+  }
+  @media (max-width: 315px) {
+    margin-top: 200px;
+  }
+}

@@ -1,6 +1,7 @@
 .headphones-body,
 .speakers-body,
-.earphones-body {
+.earphones-body,
+.see-product-body {
   // heading
   header {
     height: 100px;
@@ -23,7 +24,8 @@
         content: "";
         display: block;
         padding-bottom: 51%;
-        background: $test;
+        background: $light;
+        border-radius: $bdrr;
       }
     }
 

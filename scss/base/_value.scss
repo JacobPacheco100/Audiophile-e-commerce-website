@@ -42,6 +42,12 @@ $desktop: 992px;
   }
 }
 
+// color class
+
+.black {
+  color: black;
+}
+
 /// Flex Layout
 // below just for DRY!
 @mixin flex-center {
