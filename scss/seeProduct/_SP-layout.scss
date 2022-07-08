@@ -19,7 +19,7 @@
           background: $light;
           margin-right: 1rem;
         }
-        @media (max-width: 315px) {
+        @media (max-width: 393px) {
           @include flex-col-center;
           .quantity,
           button {
