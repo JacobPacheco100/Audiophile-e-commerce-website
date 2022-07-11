@@ -9,7 +9,8 @@
   width: 380px;
 
   padding: 32px;
-  display: flex;
+  display: none;
+  //   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
@@ -90,4 +91,8 @@
   .checkout-btn {
     width: 100%;
   }
+}
+
+.show-cart {
+  display: flex;
 }
