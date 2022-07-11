@@ -1,14 +1,18 @@
 @import "base/root";
 @import "base/value";
 @import "base/fonts";
+@import "base/buttons";
 @import "home/layout";
 @import "home/content";
 // headphones
-@import "headphones/layout";
-@import "headphones/content";
+@import "catagory-styles/layout";
+@import "catagory-styles/content";
+
 // see product
 @import "seeProduct/SP-layout";
-@import "seeProduct/SP-content";
+
+// cart
+@import "cart/style";
 
 *,
 ul,

@@ -1,6 +1,15 @@
 .see-product-body {
   .product {
     margin-top: 56px;
+    @media (max-width: $tablet) {
+      margin-bottom: 50px;
+    }
+    @media (min-width: $tablet) {
+      margin-bottom: 100px;
+    }
+    @media (min-width: $desktop) {
+      margin-bottom: 150px;
+    }
     .span-text-btn-content {
       p {
         margin-bottom: 32px;
@@ -14,10 +23,6 @@
 
       .btn-group {
         .quantity {
-          width: 120px;
-          height: 44.25px;
-          background: $light;
-          margin-right: 1rem;
         }
         @media (max-width: 393px) {
           @include flex-col-center;
@@ -44,6 +49,7 @@
         h1 {
           font-size: 3rem;
         }
+        margin-bottom: 0;
         width: 480px;
         padding-left: 0px;
         align-self: center;
@@ -56,7 +62,7 @@
     margin-top: 80px;
     letter-spacing: 0.05rem;
     font-size: 1rem;
-    color: rgb(130, 130, 130);
+    color: $light;
     font-weight: 300;
 
     &:hover {

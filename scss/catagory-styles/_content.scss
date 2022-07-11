@@ -28,7 +28,7 @@
     @media (min-width: $desktop) {
       text-align: left;
       .span-text-btn-content {
-        span {
+        span:first-child {
           color: $orange;
           font-weight: 300;
         }
