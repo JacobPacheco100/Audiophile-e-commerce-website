@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    "
+    />
+    <!-- boxicons cdn -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Document</title>
+  </head>
+  <body class="checkout-body">
+    <!--  NAVBAR -->
+    <nav>
+      <div class="container nav-bar">
+        <div>
+          <a id="menu-btn" href="#"
+            ><i class="bx bx-menu" style="color: #ffffff"></i>
+          </a>
+
+          <a class="logo" href="index.html"
+            ><img src="../../assets/svg/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div>
+          <ul>
+            <li><a class="nav-link" href="#">home</a></li>
+            <li><a class="nav-link" href="#">headphones</a></li>
+            <li><a class="nav-link" href="#">speakers</a></li>
+            <li><a class="nav-link" href="#">earphones</a></li>
+          </ul>
+        </div>
+        <a href="#"><i class="bx bx-cart-alt" style="color: #ffffff"></i></a>
+      </div>
+    </nav>
+
+    <!-- ================================================= -->
+
+    <main class="container">
+      <div class="container gb-cont"><span class="go-back">Go back</span></div>
+
+      <div class="checkout-container">
+        <h2 class="uppercase">checkout</h2>
+        <!-- fields -->
+        <fieldset>
+          <legend>Billing Details</legend>
+          <!-- name -->
+          <div class="field-grid">
+            <div class="field">
+              <label for="name">Name</label> <br />
+              <input type="text" name="name" id="name" placeholder="John Doe" />
+            </div>
+            <!-- email -->
+            <div class="field">
+              <label for="email">Email Adress</label> <br />
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="John@mail.com"
+              />
+            </div>
+            <!-- phone number -->
+            <div class="field">
+              <label for="phone">Phone Number</label> <br />
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="+1 202-555-0136"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Shipping Info</legend>
+          <!-- address -->
+          <div class="field-grid">
+            <div class="field address-field">
+              <label for="address">Your Address</label> <br />
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="1137 Williams Avenue"
+              />
+            </div>
+            <!-- zip -->
+            <div class="field">
+              <label for="zip">Zip Code</label> <br />
+              <input type="text" name="zip" id="zip" placeholder="10001" />
+            </div>
+            <!-- city -->
+            <div class="field">
+              <label for="city">City</label> <br />
+              <input type="text" name="city" id="city" placeholder="New York" />
+            </div>
+
+            <div class="field">
+              <label for="country">Country</label> <br />
+              <input
+                type="text"
+                name="country"
+                id="country"
+                placeholder="United States"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- payment Details -->
+
+        <!-- <fieldset>
+          <legend>Payment Details</legend>
+
+          <div class="field-grid radio-group">
+
+            <div class="field">
+              <input type="radio" name="text" id="text" />
+              <label for="name">e-Money</label> <br />
+            </div>
+          </div>
+        </fieldset> -->
+      </div>
+    </main>
+
+    <!-- ================================================= -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="NAV">
+          <a href="#"><img src="../../assets/svg/logo.svg" alt="logo" /></a>
+          <ul>
+            <li><a class="nav-link" href="#">home</a></li>
+            <li><a class="nav-link" href="#">headphones</a></li>
+            <li><a class="nav-link" href="#">speakers</a></li>
+            <li><a class="nav-link" href="#">earphones</a></li>
+          </ul>
+        </div>
+        <div class="grid">
+          <div class="box1">
+            <p>
+              Audiophile is an all in one stop to fulfill your audio needs.
+              We're a small team of music lovers and sound specialists who are
+              devoted to helping you get the most out of personal audio. Come
+              and visit our demo facility - we’re open 7 days a week.
+            </p>
+          </div>
+          <div class="box2">
+            <p>Copyright 2021. All Rights Reserved</p>
+          </div>
+          <div class="box3 social-container">
+            <div class="social">
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+              <a href="#"><i class="bx bxl-facebook-square"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
