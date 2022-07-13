@@ -15,7 +15,8 @@
   }
 
   .checkout-container {
-    max-width: 830px;
+    width: 100%;
+    max-width: 700px;
     padding: 30px 28px 32px 28px;
     background: white;
     @media (min-width: $tablet) {
@@ -57,7 +58,7 @@
 
       @media (min-width: $tablet) {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
       }
 
       input {
@@ -105,6 +106,138 @@
         margin-right: 10px;
         margin-left: 5px;
       }
+    }
+    .cash-on-delivery-info {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        width: 120px;
+        height: 48px;
+        background: $light;
+      }
+
+      p {
+        padding-left: 2rem;
+      }
+
+      display: none;
+    }
+    // give class on display ^
+    .show-cod-info {
+      display: flex;
+    }
+  }
+
+  //   checkout cart
+  .checkout-cart {
+    background: white;
+    //   height: 245px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 2.5rem;
+    padding: 32px;
+    //   display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+
+    .cart-container {
+      width: 100%;
+    }
+
+    .top-cart {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 32px;
+
+      h4 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 32px;
+
+      .item-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .img {
+        width: 64px;
+        height: 64px;
+        background: $light;
+        border-radius: 5px;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+      }
+
+      .quant {
+        color: $gray;
+      }
+    }
+
+    // total
+    .total,
+    .shipping,
+    .vat,
+    .grand-total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 2rem;
+
+      span {
+        font-weight: 300;
+      }
+
+      strong {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+
+    .grand-total {
+      margin-top: 2rem;
+      strong {
+        color: $orange;
+      }
+    }
+
+    .checkout-btn {
+      margin-top: 2rem;
+      width: 100%;
+    }
+  }
+
+  .show-cart {
+    display: flex;
+  }
+
+  // section :  flex on desltop
+
+  @media (min-width: $desktop) {
+    section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .checkout-cart {
+      margin-top: 0;
+      max-width: 350px;
     }
   }
 }

@@ -49,113 +49,201 @@
     <main class="container">
       <div class="container gb-cont"><span class="go-back">Go back</span></div>
 
-      <div class="checkout-container">
-        <h2 class="uppercase">checkout</h2>
-        <!-- fields -->
-        <fieldset>
-          <legend>Billing Details</legend>
-          <!-- name -->
-          <div class="field-grid">
-            <div class="field">
-              <label for="name">Name</label> <br />
-              <input type="text" name="name" id="name" placeholder="John Doe" />
+      <section>
+        <!-- checkout form -->
+        <div class="checkout-container">
+          <h2 class="uppercase">checkout</h2>
+          <!-- fields -->
+          <fieldset>
+            <legend>Billing Details</legend>
+            <!-- name -->
+            <div class="field-grid">
+              <div class="field">
+                <label for="name">Name</label> <br />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="John Doe"
+                />
+              </div>
+              <!-- email -->
+              <div class="field">
+                <label for="email">Email Adress</label> <br />
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="John@mail.com"
+                />
+              </div>
+              <!-- phone number -->
+              <div class="field">
+                <label for="phone">Phone Number</label> <br />
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="+1 202-555-0136"
+                />
+              </div>
             </div>
-            <!-- email -->
-            <div class="field">
-              <label for="email">Email Adress</label> <br />
-              <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="John@mail.com"
-              />
+          </fieldset>
+
+          <fieldset>
+            <legend>Shipping Info</legend>
+            <!-- address -->
+            <div class="field-grid">
+              <div class="field address-field">
+                <label for="address">Your Address</label> <br />
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="1137 Williams Avenue"
+                />
+              </div>
+              <!-- zip -->
+              <div class="field">
+                <label for="zip">Zip Code</label> <br />
+                <input type="text" name="zip" id="zip" placeholder="10001" />
+              </div>
+              <!-- city -->
+              <div class="field">
+                <label for="city">City</label> <br />
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="New York"
+                />
+              </div>
+
+              <div class="field">
+                <label for="country">Country</label> <br />
+                <input
+                  type="text"
+                  name="country"
+                  id="country"
+                  placeholder="United States"
+                />
+              </div>
             </div>
-            <!-- phone number -->
-            <div class="field">
-              <label for="phone">Phone Number</label> <br />
-              <input
-                type="text"
-                name="phone"
-                id="phone"
-                placeholder="+1 202-555-0136"
-              />
+          </fieldset>
+
+          <!-- payment Details -->
+
+          <fieldset>
+            <legend>Payment Details</legend>
+            <label>Payment Method</label>
+
+            <!-- e-money -->
+            <div class="field-grid radio-field-container">
+              <div class="field radio-field">
+                <label for="radio1">
+                  <input type="radio" name="radio" id="radio1" />
+                  e-Money
+                </label>
+              </div>
+
+              <!-- cash on delivery -->
+              <div class="field radio-field">
+                <label for="radio1">
+                  <input type="radio" name="radio" id="radio1" />
+                  Cash on Delivery
+                </label>
+              </div>
             </div>
+          </fieldset>
+
+          <!-- dependent ^ -->
+          <!-- e-money-options -->
+          <fieldset>
+            <div class="field-grid">
+              <!-- e-money number -->
+              <div class="field">
+                <label for="e-money">e-Money Number</label> <br />
+                <input
+                  type="text"
+                  name="e-money-number"
+                  id="e-money-number"
+                  placeholder="328531993"
+                />
+              </div>
+
+              <!-- e-money pin -->
+              <div class="field">
+                <label for="e-money">e-Money Number</label> <br />
+                <input
+                  type="text"
+                  name="e-money-number"
+                  id="e-money-number"
+                  placeholder="6891"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="cash-on-delivery-info">
+            <div class="icon"></div>
+            <p>
+              The ‘Cash on Delivery’ option enables you to pay in cash when our
+              delivery courier arrives at your residence. Just make sure your
+              address is correct so that your order will not be cancelled.
+            </p>
+          </fieldset>
+        </div>
+
+        <!-- cart -->
+        <div class="checkout-cart">
+          <div class="cart-container">
+            <!-- top -->
+            <div class="top-cart">
+              <h4 class="uppercase gap-text">summary</h4>
+            </div>
+            <!-- item -->
+            <div class="product">
+              <!-- item info ( left ) -->
+              <div class="item-info">
+                <div class="img"></div>
+                <div class="text">
+                  <strong>XX99 MK II</strong>
+                  <span>$ 2,999</span>
+                </div>
+              </div>
+              <!-- quantity ( right ) -->
+              <p class="quant">x1</p>
+            </div>
+            <!-- total -->
+            <div class="total">
+              <span class="uppercase">total</span>
+              <strong>$ 2,999</strong>
+            </div>
+            <!-- shipping -->
+            <div class="shipping">
+              <span class="uppercase">shipping</span>
+              <strong>$ 50</strong>
+            </div>
+            <!-- vat (included) -->
+            <div class="vat">
+              <span class="uppercase">vat ( included )</span>
+              <strong>$ 599.98</strong>
+            </div>
+
+            <!-- $ 3,648.8 -->
+            <div class="grand-total">
+              <span class="uppercase">grand total</span>
+              <strong>$ 3,648.8</strong>
+            </div>
+            <!-- checkout -->
+            <a href="/pages/lvl2/checkout.html"
+              ><button class="checkout-btn btn-orange uppercase">
+                checkout
+              </button></a
+            >
           </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>Shipping Info</legend>
-          <!-- address -->
-          <div class="field-grid">
-            <div class="field address-field">
-              <label for="address">Your Address</label> <br />
-              <input
-                type="text"
-                name="address"
-                id="address"
-                placeholder="1137 Williams Avenue"
-              />
-            </div>
-            <!-- zip -->
-            <div class="field">
-              <label for="zip">Zip Code</label> <br />
-              <input type="text" name="zip" id="zip" placeholder="10001" />
-            </div>
-            <!-- city -->
-            <div class="field">
-              <label for="city">City</label> <br />
-              <input type="text" name="city" id="city" placeholder="New York" />
-            </div>
-
-            <div class="field">
-              <label for="country">Country</label> <br />
-              <input
-                type="text"
-                name="country"
-                id="country"
-                placeholder="United States"
-              />
-            </div>
-          </div>
-        </fieldset>
-
-        <!-- payment Details -->
-
-        <fieldset>
-          <legend>Payment Details</legend>
-          <label>Payment Method</label>
-
-          <!-- e-money -->
-          <div class="field-grid radio-field-container">
-            <div class="field radio-field">
-              <label for="radio1">
-                <input type="radio" name="radio" id="radio1" />
-                e-Money
-              </label>
-            </div>
-
-            <!-- cash on delivery -->
-            <div class="field radio-field">
-              <label for="radio1">
-                <input type="radio" name="radio" id="radio1" />
-                Cash on Delivery
-              </label>
-            </div>
-          </div>
-        </fieldset>
-
-        <!-- <fieldset>
-          <legend>Payment Details</legend>
-
-          <div class="field-grid radio-group">
-
-            <div class="field">
-              <input type="radio" name="text" id="text" />
-              <label for="name">e-Money</label> <br />
-            </div>
-          </div>
-        </fieldset> -->
-      </div>
+        </div>
+      </section>
     </main>
 
     <!-- ================================================= -->
