@@ -640,6 +640,7 @@ button {
   font-size: 1rem;
   color: #f1f1f1;
   font-weight: 300;
+  color: #303030;
 }
 .see-product-body .go-back:hover {
   text-decoration: underline;
@@ -980,7 +981,6 @@ button {
 .checkout-body .checkout-cart {
   background: white;
   width: 100%;
-  max-width: 300px;
   margin-top: 2.5rem;
   padding: 32px;
   flex-direction: column;
@@ -1069,6 +1069,7 @@ button {
   .checkout-body .checkout-cart {
     margin-top: 0;
     max-width: 350px;
+    margin-left: 20px;
   }
 }
 

@@ -135,7 +135,6 @@
     background: white;
     //   height: 245px;
     width: 100%;
-    max-width: 300px;
     margin-top: 2.5rem;
     padding: 32px;
     //   display: flex;
@@ -238,6 +237,7 @@
     .checkout-cart {
       margin-top: 0;
       max-width: 350px;
+      margin-left: 20px;
     }
   }
 }
