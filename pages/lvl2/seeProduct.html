@@ -43,30 +43,47 @@
             <li><a class="nav-link" href="../earphones.html">earphones</a></li>
           </ul>
         </div>
-        <a href="#"><i class="bx bx-cart-alt" style="color: #ffffff"></i></a>
+        <a href="#" id="cart-icon"
+          ><i class="bx bx-cart-alt" style="color: #ffffff"></i
+        ></a>
       </div>
     </nav>
 
-    <!-- ============================================================================================-->
-    <!-- 
+    <!-- =========== shopping cart ================= -->
+
     <div class="shopping-cart">
-      <div class="flex-container">
-        <div class="flex-row">
-          <span class="gap-text">CART (2)</span>
+      <div class="cart-container">
+        <!-- top -->
+        <div class="top-cart">
+          <h4 class="uppercase gap-text">cart (1)</h4>
           <span>Remove All</span>
         </div>
-
-        <div class="flex-row">
-          <div class="img"></div>
-          <div class="info">
-            <strong></strong>
-            <p></p>
+        <!-- item -->
+        <div class="product">
+          <!-- item info ( left ) -->
+          <div class="item-info">
+            <div class="img"></div>
+            <div class="text">
+              <strong>XX99 MK II</strong>
+              <span>$ 2,999</span>
+            </div>
           </div>
-          <div class="quantity"></div>
+          <!-- quantity ( right ) -->
+          <div class="box"></div>
         </div>
-        <div class="flex-row"></div>
+        <!-- total -->
+        <div class="total">
+          <span class="uppercase">total</span>
+          <strong>$ 2,999</strong>
+        </div>
+        <!-- checkout -->
+        <a href="/pages/lvl2/checkout.html"
+          ><button class="checkout-btn btn-orange uppercase">
+            checkout
+          </button></a
+        >
       </div>
-    </div> -->
+    </div>
 
     <!-- ============================================================================================-->
 
