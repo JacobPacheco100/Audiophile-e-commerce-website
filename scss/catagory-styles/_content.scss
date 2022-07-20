@@ -18,6 +18,9 @@
 
   .product {
     text-align: center;
+    h2 {
+      max-width: 200px;
+    }
 
     .span-text-btn-content {
       @include margin-center;
