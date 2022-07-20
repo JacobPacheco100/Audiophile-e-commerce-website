@@ -3,14 +3,27 @@ async function populate() {
   const request = new Request(url)
 
   const response = await fetch(request)
-  const data = await response.json()
+  const data = await response.json() // <-- parsed data
 
-  // headphones(data)
-  speakers(data)
-  // earphones(data)
+  if (headerValue === "Headphones") {
+    headphonesPage(data)
+  } else if (headerValue === "Speakers") {
+    speakersPage(data)
+  } else {
+    earphonesPage(data)
+  }
+}
+const headerValue = document.getElementById("headerCategory").textContent
+
+function showProducts(card, data, object) {
+  const productName = card.querySelector("h2") // <-- this is where the error starts
+  const productDescription = card.querySelector("p")
+
+  productName.textContent = data[object].name
+  productDescription.textContent = data[object].description
 }
 
-function headphones(data) {
+function headphonesPage(data) {
   const data1 = document.getElementById("data1")
   const data2 = document.getElementById("data2")
   const data3 = document.getElementById("data3")
@@ -20,7 +33,7 @@ function headphones(data) {
   showProducts(data3, data, 3)
 }
 
-function speakers(data) {
+function speakersPage(data) {
   const data4 = document.getElementById("data4")
   const data5 = document.getElementById("data5")
 
@@ -28,19 +41,9 @@ function speakers(data) {
   showProducts(data5, data, 5)
 }
 
-function earphones(data) {
+function earphonesPage(data) {
   const data0 = document.getElementById("data0")
-  showProducts(data0, data, 1)
-}
-
-function showProducts(card, data, object) {
-  const productName = card.querySelector("h2")
-  const productDescription = card.querySelector("p")
-
-  productName.textContent = data[object].name
-  productDescription.textContent = data[object].description
+  showProducts(data0, data, 0)
 }
 
 populate()
-
-// create a function that takes in array of objects (array containing relevent page products)
