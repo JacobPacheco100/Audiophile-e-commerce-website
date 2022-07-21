@@ -217,10 +217,10 @@ button {
 
 .home-body header {
   background-color: #181818;
-  background-image: url("../assets/img/image-hero-mobile.jpg");
+  background-image: url("/imgs/home/mobile/image-header.jpg");
   background-repeat: no-repeat;
-  background-size: 600px;
-  background-position: 50% -50%;
+  background-size: cover;
+  background-position: 50% 50%;
   height: 500px;
 }
 @media (min-width: 480px) {
@@ -230,9 +230,16 @@ button {
     background-position: 50% -70px;
   }
 }
+@media (min-width: 480px) {
+  .home-body header {
+    background-image: url("/imgs/home/tablet/image-header.jpg");
+    background-size: contain;
+    background-position: 50% -55px;
+  }
+}
 @media (min-width: 992px) {
   .home-body header {
-    background-image: url("../assets/img/image-hero.jpg");
+    background-image: url("/imgs/home/desktop/image-hero.jpg");
     background-size: contain;
     background-position: 50% -55px;
   }
@@ -252,14 +259,14 @@ button {
 .home-body .product-grid .box-2 {
   grid-area: box-2;
   height: 421px;
-  background-image: url(/assets/img/speaker-zx7.jpeg);
+  background-image: url("/imgs/home/desktop/image-speaker-zx7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .home-body .product-grid .box-3 {
   grid-area: box-3;
-  background-image: url(/assets/img/earphones-yx1.jpeg);
+  background-image: url("/imgs/home/desktop/image-earphones-yx1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -1387,7 +1394,7 @@ footer .grid div .social a:nth-of-type(2) {
 .about .img {
   border-radius: 0.5rem;
   height: 320px;
-  background: url(../assets/img/about-img.jpeg);
+  background: url(/imgs/shared/desktop/image-best-gear.jpg);
   background-size: cover;
   background-position: center;
 }
