@@ -628,7 +628,6 @@ button {
   }
   .see-product-body .product .span-text-btn-content h1 {
     font-size: 3rem;
-    max-width: 239px;
   }
 }
 .see-product-body .go-back {
@@ -760,6 +759,7 @@ button {
   width: 100%;
   height: 400px;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .see-product-body .recomend .p-img {
   border-radius: 0.5rem;

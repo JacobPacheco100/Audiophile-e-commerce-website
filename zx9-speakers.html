@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    "
+    />
+    <!-- boxicons cdn -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body class="see-product-body">
+    <!--  NAVBAR -->
+
+    <nav>
+      <div class="container nav-bar">
+        <div>
+          <a id="menu-btn" href="#"
+            ><i class="bx bx-menu" style="color: #ffffff"></i>
+          </a>
+
+          <a class="logo" href="index.html"
+            ><img src="imgs/shared/desktop/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div>
+          <ul>
+            <li><a class="nav-link" href="index.html">home</a></li>
+            <li>
+              <a class="nav-link" href="headphones.html">headphones</a>
+            </li>
+            <li><a class="nav-link" href="speakers.html">speakers</a></li>
+            <li><a class="nav-link" href="earphones.html">earphones</a></li>
+          </ul>
+        </div>
+        <a href="#" id="cart-icon"
+          ><i class="bx bx-cart-alt" style="color: #ffffff"></i
+        ></a>
+      </div>
+    </nav>
+
+    <!-- =========== shopping cart ================= -->
+
+    <div class="shopping-cart">
+      <div class="cart-container">
+        <!-- top -->
+        <div class="top-cart">
+          <h4 class="uppercase gap-text">cart (1)</h4>
+          <span>Remove All</span>
+        </div>
+        <!-- item -->
+        <div class="product">
+          <!-- item info ( left ) -->
+          <div class="item-info">
+            <div class="img"></div>
+            <div class="text">
+              <strong>XX99 MK II</strong>
+              <span>$ 2,999</span>
+            </div>
+          </div>
+          <!-- quantity ( right ) -->
+          <div class="box"></div>
+        </div>
+        <!-- total -->
+        <div class="total">
+          <span class="uppercase">total</span>
+          <strong>$ 2,999</strong>
+        </div>
+        <!-- checkout -->
+        <a href="checkout.html"
+          ><button class="checkout-btn btn-orange uppercase">
+            checkout
+          </button></a
+        >
+      </div>
+    </div>
+
+    <!-- ============================================================================================-->
+
+    <div class="container gb-cont">
+      <span id="backBTN" class="go-back">Go back</span>
+    </div>
+
+    <section class="container product hp1">
+      <img
+        src="imgs/product-zx9-speaker/desktop/image-category-page-preview.jpg"
+        alt=""
+      />
+      <div class="span-text-btn-content">
+        <span class="spaced-text uppercase">New Product</span>
+        <h1 class="uppercase">ZX9 Speaker</h1>
+        <p>
+          Upgrade your sound system with the all new ZX9 active speaker. It’s a
+          bookshelf speaker system that offers truly wireless connectivity --
+          creating new possibilities for more pleasing and practical audio
+          setups.
+        </p>
+        <strong class="d-block gap-text black">$ 4,500</strong>
+        <div class="btn-group">
+          <div class="quantity">
+            <button class="less">-</button>
+            <span class="quant">1</span>
+            <div class="space"></div>
+            <button class="add">+</button>
+          </div>
+          <button class="uppercase btn-orange">add to cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================================
+    product info -->
+    <section class="container product-info">
+      <div class="features text-content">
+        <h2 class="uppercase">Features</h2>
+        <p>
+          Connect via Bluetooth or nearly any wired source. This speaker
+          features optical, digital coaxial, USB Type-B, stereo RCA, and stereo
+          XLR inputs, allowing you to have up to five wired source devices
+          connected for easy switching. Improved bluetooth technology offers
+          near lossless audio quality at up to 328ft (100m).
+        </p>
+        <p>
+          Discover clear, more natural sounding highs than the competition with
+          ZX9’s signature planar diaphragm tweeter. Equally important is its
+          powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass
+          unit. You’ll be able to enjoy equal sound quality whether in a large
+          room or small den. Furthermore, you will experience new sensations
+          from old songs since it can respond to even the subtle waveforms.
+        </p>
+      </div>
+
+      <div class="in-the-box">
+        <h2 class="uppercase">in the box</h2>
+        <ul>
+          <li><span>2x</span>Speaker unit</li>
+          <li><span>2x</span>Speaker cloth panel</li>
+          <li><span>1x</span>User manual</li>
+          <li><span>1x</span>3.5mm 10m audio cable</li>
+          <li><span>1x</span>10m optical cable</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- product imgs : grid -->
+    <section class="container product-gallery">
+      <div class="grid headphone-grid-5">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+      </div>
+    </section>
+
+    <!-- recomendations -->
+
+    <section class="container recomend">
+      <h2 class="uppercase title">you may also like</h2>
+      <div class="flex-container">
+        <div class="recomended-product mid">
+          <img
+            class="p-img"
+            src="imgs/shared/desktop/image-zx7-speaker.jpg"
+            alt="product"
+          />
+          <div class="btn-content">
+            <h2>ZX7 SPEAKER</h2>
+            <button class="uppercase btn-orange">see product</button>
+          </div>
+        </div>
+
+        <div class="recomended-product">
+          <img
+            class="p-img"
+            src="imgs/shared/desktop/image-xx99-mark-one-headphones.jpg"
+            alt="product"
+          />
+          <div class="btn-content">
+            <h2>XX99 MARK I</h2>
+            <button class="uppercase btn-orange">see product</button>
+          </div>
+        </div>
+
+        <div class="recomended-product mid">
+          <img
+            class="p-img"
+            src="imgs/shared/desktop/image-xx59-headphones.jpg"
+            alt="product"
+          />
+          <div class="btn-content">
+            <h2>XX59</h2>
+            <button class="uppercase btn-orange">see product</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product line -->
+    <section>
+      <div class="container">
+        <div class="product-line">
+          <a href="headphones.html" class="item">
+            <img
+              src="imgs/shared/desktop/image-category-thumbnail-headphones.png"
+              alt="headphones"
+            />
+            <div class="item-content">
+              <p class="gap-text">headphones</p>
+              <div>
+                <span>shop</span>
+                <i class="bx bx-chevron-right"></i>
+              </div>
+            </div>
+          </a>
+          <a href="/pages/speakers.html" class="item">
+            <img
+              src="imgs/shared/desktop/image-category-thumbnail-speakers.png"
+              alt="headphones"
+            />
+
+            <div class="item-content">
+              <p class="gap-text">speakers</p>
+              <div>
+                <span>shop</span>
+                <i class="bx bx-chevron-right"></i>
+              </div>
+            </div>
+          </a>
+          <a href="/pages/earphones.html" class="item">
+            <img
+              src="imgs/shared/desktop/image-category-thumbnail-earphones.png"
+              alt="headphones"
+            />
+
+            <div class="item-content">
+              <p class="gap-text">earphones</p>
+              <div>
+                <span>shop</span>
+                <i class="bx bx-chevron-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- features & In the box -->
+
+    <!-- about -->
+    <section>
+      <div class="container">
+        <div class="about">
+          <div class="text-content">
+            <h2>BRINGING YOU THE <span>BEST</span> AUDIO GEAR</h2>
+            <p>
+              Located at the heart of New York City, Audiophile is the premier
+              store for high end headphones, earphones, speakers, and audio
+              accessories. We have a large showroom and luxury demonstration
+              rooms available for you to browse and experience a wide range of
+              our products. Stop by our store to meet some of the fantastic
+              people who make Audiophile the best place to buy your portable
+              audio equipment.
+            </p>
+          </div>
+          <div class="img"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="container">
+        <div class="NAV">
+          <a href="#"><img src="imgs/shared/desktop/logo.svg" alt="logo" /></a>
+          <ul>
+            <li><a class="nav-link" href="index.html">home</a></li>
+            <li>
+              <a class="nav-link" href="headphones.html">headphones</a>
+            </li>
+            <li><a class="nav-link" href="speakers.html">speakers</a></li>
+            <li><a class="nav-link" href="earphones.html">earphones</a></li>
+          </ul>
+        </div>
+        <div class="grid">
+          <div class="box1">
+            <p>
+              Audiophile is an all in one stop to fulfill your audio needs.
+              We're a small team of music lovers and sound specialists who are
+              devoted to helping you get the most out of personal audio. Come
+              and visit our demo facility - we’re open 7 days a week.
+            </p>
+          </div>
+          <div class="box2">
+            <p>Copyright 2021. All Rights Reserved</p>
+          </div>
+          <div class="box3 social-container">
+            <div class="social">
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+              <a href="#"><i class="bx bxl-facebook-square"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/data.json"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
