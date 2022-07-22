@@ -3,7 +3,7 @@
   // header
   header {
     background-color: $dark;
-    background-image: url("/imgs/home/mobile/image-header.jpg");
+    background-image: url("../imgs/home/mobile/image-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -19,14 +19,14 @@
   }
   @media (min-width: $tablet) {
     header {
-      background-image: url("/imgs/home/tablet/image-header.jpg");
+      background-image: url("../../imgs/home/tablet/image-header.jpg");
       background-size: contain;
       background-position: 50% -55px;
     }
   }
   @media (min-width: $desktop) {
     header {
-      background-image: url("/imgs/home/desktop/image-hero.jpg");
+      background-image: url("/Portfolio/imgs/home/desktop/image-hero.jpg");
       background-size: contain;
       background-position: 50% -55px;
     }
