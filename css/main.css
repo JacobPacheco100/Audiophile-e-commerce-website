@@ -1462,7 +1462,7 @@ footer .grid div .social a:nth-of-type(2) {
 .about .img {
   border-radius: 0.5rem;
   height: 320px;
-  background: url("/imgs/shared/desktop/image-best-gear.jpg");
+  background: url("../imgs/shared/desktop/image-best-gear.jpg");
   background-size: cover;
   background-position: center;
 }
