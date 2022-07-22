@@ -628,6 +628,7 @@ button {
   }
   .see-product-body .product .span-text-btn-content h1 {
     font-size: 3rem;
+    max-width: 239px;
   }
 }
 .see-product-body .go-back {
@@ -731,7 +732,6 @@ button {
   }
   .see-product-body .product-gallery .box {
     border-radius: 0.5rem;
-    background: rgb(208, 208, 208);
   }
   .see-product-body .product-gallery .box3 {
     grid-column: 2/span 4;
@@ -782,6 +782,90 @@ button {
     width: 90%;
     height: 300px;
   }
+}
+
+.headphone-grid-1 .box {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.headphone-grid-1 .box1 {
+  background-image: url("/imgs/product-xx59-headphones/desktop/image-gallery-1.jpg");
+}
+.headphone-grid-1 .box2 {
+  background-image: url("/imgs/product-xx59-headphones/desktop/image-gallery-2.jpg");
+}
+.headphone-grid-1 .box3 {
+  background-image: url("/imgs/product-xx59-headphones/desktop/image-gallery-3.jpg");
+}
+
+.headphone-grid-2 .box {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.headphone-grid-2 .box1 {
+  background-image: url("/imgs/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg");
+}
+.headphone-grid-2 .box2 {
+  background-image: url("/imgs/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg");
+}
+.headphone-grid-2 .box3 {
+  background-image: url("/imgs/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg");
+}
+
+.headphone-grid-3 .box {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.headphone-grid-3 .box1 {
+  background-image: url("/imgs/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg");
+}
+.headphone-grid-3 .box2 {
+  background-image: url("/imgs/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg");
+}
+.headphone-grid-3 .box3 {
+  background-image: url("/imgs/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg");
+}
+
+.headphone-grid-4 .box {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.headphone-grid-4 .box1 {
+  background-image: url("/imgs/product-zx7-speaker/desktop/image-gallery-1.jpg");
+}
+.headphone-grid-4 .box2 {
+  background-image: url("/imgs/product-zx7-speaker/desktop/image-gallery-2.jpg");
+}
+.headphone-grid-4 .box3 {
+  background-image: url("/imgs/product-zx7-speaker/desktop/image-gallery-3.jpg");
+}
+
+.headphone-grid-5 .box {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.headphone-grid-5 .box1 {
+  background-image: url("/imgs/product-zx9-speaker/desktop/image-gallery-1.jpg");
+}
+.headphone-grid-5 .box2 {
+  background-image: url("/imgs/product-zx9-speaker/desktop/image-gallery-2.jpg");
+}
+.headphone-grid-5 .box3 {
+  background-image: url("/imgs/product-zx9-speaker/desktop/image-gallery-3.jpg");
+}
+
+.headphone-grid-6 .box {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.headphone-grid-6 .box1 {
+  background-image: url("/imgs/product-yx1-earphones/desktop/image-gallery-1.jpg");
+}
+.headphone-grid-6 .box2 {
+  background-image: url("/imgs/product-yx1-earphones/desktop/image-gallery-2.jpg");
+}
+.headphone-grid-6 .box3 {
+  background-image: url("/imgs/product-yx1-earphones/desktop/image-gallery-3.jpg");
 }
 
 .shopping-cart {
