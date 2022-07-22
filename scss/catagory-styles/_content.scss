@@ -20,6 +20,7 @@
     text-align: center;
     h2 {
       max-width: 200px;
+      margin-inline: auto;
     }
 
     .span-text-btn-content {
@@ -34,6 +35,9 @@
         span:first-child {
           color: $orange;
           font-weight: 300;
+        }
+        h2 {
+          margin-inline: 0;
         }
         margin: 0;
         width: 443px;

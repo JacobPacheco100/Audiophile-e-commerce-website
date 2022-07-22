@@ -16,21 +16,10 @@
   // products display
   .product {
     margin-top: 64px;
-    margin-bottom: -80px;
-    height: 700px;
-    .img {
+    margin-bottom: 160px;
+    img {
       width: 100%;
-      &::after {
-        content: "";
-        display: block;
-        padding-bottom: 51%;
-        background: $light;
-        border-radius: $bdrr;
-      }
-    }
-
-    @media (min-width: $tablet) {
-      margin-bottom: 0px;
+      margin-bottom: 40px;
     }
 
     @media (min-width: $desktop) {
@@ -38,11 +27,9 @@
       align-items: flex-start;
       height: auto;
       margin-bottom: 120px;
-      .img {
+      img {
         width: 50%;
-        &::after {
-          padding-bottom: 100%;
-        }
+        margin-bottom: 0;
       }
     }
   }

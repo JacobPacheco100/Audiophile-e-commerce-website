@@ -447,32 +447,14 @@ button {
 .earphones-body .product,
 .see-product-body .product {
   margin-top: 64px;
-  margin-bottom: -80px;
-  height: 700px;
+  margin-bottom: 160px;
 }
-.headphones-body .product .img,
-.speakers-body .product .img,
-.earphones-body .product .img,
-.see-product-body .product .img {
+.headphones-body .product img,
+.speakers-body .product img,
+.earphones-body .product img,
+.see-product-body .product img {
   width: 100%;
-}
-.headphones-body .product .img::after,
-.speakers-body .product .img::after,
-.earphones-body .product .img::after,
-.see-product-body .product .img::after {
-  content: "";
-  display: block;
-  padding-bottom: 51%;
-  background: #f1f1f1;
-  border-radius: 0.5rem;
-}
-@media (min-width: 480px) {
-  .headphones-body .product,
-.speakers-body .product,
-.earphones-body .product,
-.see-product-body .product {
-    margin-bottom: 0px;
-  }
+  margin-bottom: 40px;
 }
 @media (min-width: 992px) {
   .headphones-body .product,
@@ -487,17 +469,12 @@ button {
     height: auto;
     margin-bottom: 120px;
   }
-  .headphones-body .product .img,
-.speakers-body .product .img,
-.earphones-body .product .img,
-.see-product-body .product .img {
+  .headphones-body .product img,
+.speakers-body .product img,
+.earphones-body .product img,
+.see-product-body .product img {
     width: 50%;
-  }
-  .headphones-body .product .img::after,
-.speakers-body .product .img::after,
-.earphones-body .product .img::after,
-.see-product-body .product .img::after {
-    padding-bottom: 100%;
+    margin-bottom: 0;
   }
 }
 
@@ -539,6 +516,7 @@ button {
 .earphones-body .product h2,
 .see-product-body .product h2 {
   max-width: 200px;
+  margin-inline: auto;
 }
 .headphones-body .product .span-text-btn-content,
 .speakers-body .product .span-text-btn-content,
@@ -571,6 +549,12 @@ button {
 .see-product-body .product .span-text-btn-content span:first-child {
     color: #d87d4a;
     font-weight: 300;
+  }
+  .headphones-body .product .span-text-btn-content h2,
+.speakers-body .product .span-text-btn-content h2,
+.earphones-body .product .span-text-btn-content h2,
+.see-product-body .product .span-text-btn-content h2 {
+    margin-inline: 0;
   }
   .headphones-body .product .span-text-btn-content p,
 .speakers-body .product .span-text-btn-content p,
@@ -1394,7 +1378,7 @@ footer .grid div .social a:nth-of-type(2) {
 .about .img {
   border-radius: 0.5rem;
   height: 320px;
-  background: url(/imgs/shared/desktop/image-best-gear.jpg);
+  background: url("/imgs/shared/desktop/image-best-gear.jpg");
   background-size: cover;
   background-position: center;
 }
