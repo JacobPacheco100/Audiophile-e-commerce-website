@@ -217,7 +217,7 @@ button {
 
 .home-body header {
   background-color: #181818;
-  background-image: url("/imgs/home/mobile/image-header.jpg");
+  background-image: url("../imgs/home/mobile/image-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -232,14 +232,14 @@ button {
 }
 @media (min-width: 480px) {
   .home-body header {
-    background-image: url("/imgs/home/tablet/image-header.jpg");
+    background-image: url("../imgs/home/tablet/image-header.jpg");
     background-size: contain;
     background-position: 50% -55px;
   }
 }
 @media (min-width: 992px) {
   .home-body header {
-    background-image: url("/imgs/home/desktop/image-hero.jpg");
+    background-image: url("../imgs/home/desktop/image-hero.jpg");
     background-size: contain;
     background-position: 50% -55px;
   }
@@ -259,14 +259,14 @@ button {
 .home-body .product-grid .box-2 {
   grid-area: box-2;
   height: 421px;
-  background-image: url("/imgs/home/desktop/image-speaker-zx7.jpg");
+  background-image: url("../imgs/home/desktop/image-speaker-zx7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .home-body .product-grid .box-3 {
   grid-area: box-3;
-  background-image: url("/imgs/home/desktop/image-earphones-yx1.jpg");
+  background-image: url("../imgs/home/desktop/image-earphones-yx1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -789,13 +789,13 @@ button {
   background-repeat: no-repeat;
 }
 .headphone-grid-1 .box1 {
-  background-image: url("/imgs/product-xx59-headphones/desktop/image-gallery-1.jpg");
+  background-image: url("../imgs/product-xx59-headphones/desktop/image-gallery-1.jpg");
 }
 .headphone-grid-1 .box2 {
-  background-image: url("/imgs/product-xx59-headphones/desktop/image-gallery-2.jpg");
+  background-image: url("../imgs/product-xx59-headphones/desktop/image-gallery-2.jpg");
 }
 .headphone-grid-1 .box3 {
-  background-image: url("/imgs/product-xx59-headphones/desktop/image-gallery-3.jpg");
+  background-image: url("../imgs/product-xx59-headphones/desktop/image-gallery-3.jpg");
 }
 
 .headphone-grid-2 .box {
@@ -803,13 +803,13 @@ button {
   background-repeat: no-repeat;
 }
 .headphone-grid-2 .box1 {
-  background-image: url("/imgs/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg");
+  background-image: url("../imgs/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg");
 }
 .headphone-grid-2 .box2 {
-  background-image: url("/imgs/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg");
+  background-image: url("../imgs/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg");
 }
 .headphone-grid-2 .box3 {
-  background-image: url("/imgs/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg");
+  background-image: url("../imgs/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg");
 }
 
 .headphone-grid-3 .box {
@@ -817,13 +817,13 @@ button {
   background-repeat: no-repeat;
 }
 .headphone-grid-3 .box1 {
-  background-image: url("/imgs/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg");
+  background-image: url("../imgs/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg");
 }
 .headphone-grid-3 .box2 {
-  background-image: url("/imgs/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg");
+  background-image: url("../imgs/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg");
 }
 .headphone-grid-3 .box3 {
-  background-image: url("/imgs/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg");
+  background-image: url("../imgs/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg");
 }
 
 .headphone-grid-4 .box {
@@ -831,13 +831,13 @@ button {
   background-repeat: no-repeat;
 }
 .headphone-grid-4 .box1 {
-  background-image: url("/imgs/product-zx7-speaker/desktop/image-gallery-1.jpg");
+  background-image: url("../imgs/product-zx7-speaker/desktop/image-gallery-1.jpg");
 }
 .headphone-grid-4 .box2 {
-  background-image: url("/imgs/product-zx7-speaker/desktop/image-gallery-2.jpg");
+  background-image: url("../imgs/product-zx7-speaker/desktop/image-gallery-2.jpg");
 }
 .headphone-grid-4 .box3 {
-  background-image: url("/imgs/product-zx7-speaker/desktop/image-gallery-3.jpg");
+  background-image: url("../imgs/product-zx7-speaker/desktop/image-gallery-3.jpg");
 }
 
 .headphone-grid-5 .box {
@@ -845,13 +845,13 @@ button {
   background-repeat: no-repeat;
 }
 .headphone-grid-5 .box1 {
-  background-image: url("/imgs/product-zx9-speaker/desktop/image-gallery-1.jpg");
+  background-image: url("../imgs/product-zx9-speaker/desktop/image-gallery-1.jpg");
 }
 .headphone-grid-5 .box2 {
-  background-image: url("/imgs/product-zx9-speaker/desktop/image-gallery-2.jpg");
+  background-image: url("../imgs/product-zx9-speaker/desktop/image-gallery-2.jpg");
 }
 .headphone-grid-5 .box3 {
-  background-image: url("/imgs/product-zx9-speaker/desktop/image-gallery-3.jpg");
+  background-image: url("../imgs/product-zx9-speaker/desktop/image-gallery-3.jpg");
 }
 
 .headphone-grid-6 .box {
@@ -859,13 +859,13 @@ button {
   background-repeat: no-repeat;
 }
 .headphone-grid-6 .box1 {
-  background-image: url("/imgs/product-yx1-earphones/desktop/image-gallery-1.jpg");
+  background-image: url("../imgs/product-yx1-earphones/desktop/image-gallery-1.jpg");
 }
 .headphone-grid-6 .box2 {
-  background-image: url("/imgs/product-yx1-earphones/desktop/image-gallery-2.jpg");
+  background-image: url("../imgs/product-yx1-earphones/desktop/image-gallery-2.jpg");
 }
 .headphone-grid-6 .box3 {
-  background-image: url("/imgs/product-yx1-earphones/desktop/image-gallery-3.jpg");
+  background-image: url("../imgs/product-yx1-earphones/desktop/image-gallery-3.jpg");
 }
 
 .shopping-cart {
